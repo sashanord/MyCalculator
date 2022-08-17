@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-
+// This is really wrong...
 class MainActivity : AppCompatActivity() {
 
     var previousValue = "0"
@@ -95,6 +95,9 @@ class MainActivity : AppCompatActivity() {
 
         }
         else {
+
+
+
             when (s) {
                 "1", "2", "3", "4", "5", "6", "7", "8", "9", "0" -> if (currText != "0") editText.setText(currText + s)
                 else editText.setText(s)
